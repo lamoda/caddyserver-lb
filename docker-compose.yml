@@ -3,13 +3,14 @@ version: '3.7'
 services:
   nginx:
     image: nginx:alpine
-    
+
   caddy:
     build:
       context: .
       dockerfile: Dockerfile
     image: caddy
     volumes:
+      - ./certs:/root/certs
       - ./Caddyfile:/etc/caddy/Caddyfile
     ports:
       - 80:80
