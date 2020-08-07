@@ -1,3 +1,24 @@
 # caddyserver-lb
 
-Demo repository with caddy in docker
+- [Installation](#installation)
+    - [Locally](#locally)
+    - [Docker](#docker)
+
+
+## Installation
+
+## Locally
+
+Run
+
+```sh
+caddy run
+```
+
+## Docker
+
+Run
+
+```sh
+docker-compose up -d
+```
